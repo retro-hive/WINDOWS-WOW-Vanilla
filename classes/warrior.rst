@@ -33,8 +33,8 @@ Receiving damage
 | ``d`` : ``D`` amage received.
 | ``c`` : ``C`` onversion score. This score equals to ``230.6`` at level 60.
 
-| This means that the less damage you receive, the less rage you gain.
-| This is why going full protection might become a problem at some point :
+This means that the less damage you receive, the less rage you gain.
+This is why going full protection might become a problem at some point :
   * You will gain less rage from hits received.
   * Your low offensive abilities will give you low rage points.
 
@@ -92,3 +92,12 @@ From skills
 .. _ShieldSlam:  https://classic.wowhead.com/spell=23925/shield-slam
 .. _ShieldBash:  https://classic.wowhead.com/spell=1672/shield-bash
 .. _BattleShout: https://classic.wowhead.com/spell=25289/battle-shout
+
+
+.. toctree::
+  :maxdepth: 2
+  :titlesonly:
+  :caption: Role
+  :name: role
+
+  warrior/tank

@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Warrior &mdash; World of Warcraft - Vanilla  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tanks" href="warrior/tank.html" />
+    <link rel="prev" title="World of Warcraft - Vanilla" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> World of Warcraft - Vanilla
+          
+
+          
+            
+            <img src="../_static/WoW.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Warrior</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="warrior/tank.html">Tanks</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">World of Warcraft - Vanilla</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Warrior</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/classes/warrior.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="warrior">
+<h1>Warrior<a class="headerlink" href="#warrior" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="generating-rage">
+<h2>Generating rage<a class="headerlink" href="#generating-rage" title="Permalink to this headline">¶</a></h2>
+<p>As a warrior, you get two main sources of rage points.</p>
+<div class="section" id="hitting">
+<h3>Hitting<a class="headerlink" href="#hitting" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">All your white hits will give you rage points.</div>
+<div class="line">The formula for this is <span class="math notranslate nohighlight">\(R = ((15 x d) / (4 x c)) + ((f x s) / 2) &lt;= (15 x d) / c\)</span></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">d</span></code> : <code class="docutils literal notranslate"><span class="pre">D</span></code> amage done</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">c</span></code> : <code class="docutils literal notranslate"><span class="pre">C</span></code> onversion score. This score equals to <code class="docutils literal notranslate"><span class="pre">230.6</span></code> at level 60.</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">f</span></code> : Hit <code class="docutils literal notranslate"><span class="pre">F</span></code> actor. It depends if you hit with main hand, off hand, and if you crit:
+* Main Hand
+  * Normal hit = <cite>3.5</cite>
+  * Critical hit = <cite>7.0</cite>
+* Off Hand
+  * Normal hit = <cite>1.75</cite>
+  * Critical hit = <cite>3.5</cite></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">s</span></code> : Weapon <code class="docutils literal notranslate"><span class="pre">S</span></code> peed</div>
+</div>
+<p>Considering the above formula, it is obvious that you win more and more rage points
+as you gear up and get DPS + Attack Power bonuses.</p>
+</div>
+<div class="section" id="receiving-damage">
+<h3>Receiving damage<a class="headerlink" href="#receiving-damage" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Each damage received will get you some rage points.</div>
+<div class="line">The formula for this is <span class="math notranslate nohighlight">\(R = (5/2) x (d/c)\)</span></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">d</span></code> : <code class="docutils literal notranslate"><span class="pre">D</span></code> amage received.</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">c</span></code> : <code class="docutils literal notranslate"><span class="pre">C</span></code> onversion score. This score equals to <code class="docutils literal notranslate"><span class="pre">230.6</span></code> at level 60.</div>
+</div>
+<p>This means that the less damage you receive, the less rage you gain.
+This is why going full protection might become a problem at some point :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You will gain less rage from hits received.</p></li>
+<li><p>Your low offensive abilities will give you low rage points.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="generating-threat">
+<h2>Generating threat<a class="headerlink" href="#generating-threat" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="from-damage">
+<h3>From damage<a class="headerlink" href="#from-damage" title="Permalink to this headline">¶</a></h3>
+<p>Threat is done through damage and buff effects.</p>
+<p>A multiplier is applied depending on your stance:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Battle / Zerk : <code class="docutils literal notranslate"><span class="pre">0.8</span></code></p></li>
+<li><p>Defense : <code class="docutils literal notranslate"><span class="pre">1.30</span></code> (you can get up to <code class="docutils literal notranslate"><span class="pre">1.45</span></code> with <code class="docutils literal notranslate"><span class="pre">defiance</span></code> talent)</p></li>
+</ul>
+</div></blockquote>
+<p>Taking a <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">000</span></code> hit damage, we generate</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Battle / Zerk : <code class="docutils literal notranslate"><span class="pre">800</span></code> threat</p></li>
+<li><p>Defense : <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">300</span></code> threat (<code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">450</span></code> with <code class="docutils literal notranslate"><span class="pre">defiance</span></code>)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="from-skills">
+<h3>From skills<a class="headerlink" href="#from-skills" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Skill</p></td>
+<td><p>Rage cost</p></td>
+<td><p>Threat</p></td>
+<td><p>TPR</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://classic.wowhead.com/spell=25288/revenge">Revenge</a></p></td>
+<td><p>5</p></td>
+<td><p>355</p></td>
+<td><p>71</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://classic.wowhead.com/spell=11597/sunder-armor">SunderArmor</a></p></td>
+<td><p>12-15</p></td>
+<td><p>260-299</p></td>
+<td><p>17-21</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://classic.wowhead.com/spell=23925/shield-slam">ShieldSlam</a></p></td>
+<td><p>20</p></td>
+<td><p>250 + Damage</p></td>
+<td><p>12.5-100</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://classic.wowhead.com/spell=1672/shield-bash">ShieldBash</a></p></td>
+<td><p>10</p></td>
+<td><p>180</p></td>
+<td><p>18</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://classic.wowhead.com/spell=25289/battle-shout">BattleShout</a></p></td>
+<td><p>10</p></td>
+<td><p>70 * Players in group</p></td>
+<td><p>up to 35</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound" id="role">
+<p class="caption" role="heading"><span class="caption-text">Role</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="warrior/tank.html">Tanks</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="warrior/tank.html" class="btn btn-neutral float-right" title="Tanks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="World of Warcraft - Vanilla" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright .
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -9,4 +9,4 @@ PYTHON_FILES = [
 def gendoc(session):
     session.install("sphinx", "sphinx-rtd-theme")
     session.install("-e", ".")
-    session.run("sphinx-build", "-M", "html", "doc", "build")
+    session.run("sphinx-build", "-M", "html", ".", "build")

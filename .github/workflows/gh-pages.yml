@@ -26,7 +26,7 @@ jobs:
       - name: "Creating documentation"
         uses: ammaraskar/sphinx-action@master
         with:
-           pre-build-command: "pip install git+https://github.com/sphinx-contrib/youtube"
+           pre-build-command: "apt-get install -y git && pip install git+https://github.com/sphinx-contrib/youtube"
            docs-folder: "./"
 
       # 3. Déploiement sur les Github Pages

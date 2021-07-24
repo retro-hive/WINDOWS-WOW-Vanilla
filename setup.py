@@ -18,7 +18,7 @@ setup(
     version="0.0.0",
     description="World of Warcraft - Vanilla",
     url="https://github.com/retro-hive/WINDOWS-WOW-Vanilla",
-    license="WTFPL",
+    license="BSD3",
 
     long_description=long_description,
 

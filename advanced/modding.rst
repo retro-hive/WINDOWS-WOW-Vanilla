@@ -8,3 +8,4 @@ Modding
   :name: modding
 
   modding/improved.models
+  modding/wod.chars

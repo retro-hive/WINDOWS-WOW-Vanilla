@@ -22,6 +22,6 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 extensions = [
     'sphinx.ext.githubpages',
-    #'sphinxcontrib.youtube',
+    'sphinxcontrib.youtube',
     'sphinxcontrib.images',
 ]

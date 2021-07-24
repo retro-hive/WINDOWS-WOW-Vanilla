@@ -9,3 +9,4 @@ Modding
 
   modding/improved.models
   modding/wod.chars
+  modding/legion.tilesets

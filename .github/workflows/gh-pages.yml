@@ -23,27 +23,10 @@ jobs:
         with:
           persist-credentials: false
 
-      # 2. Partie spécifique à Sphinx (installation des
-      #    dépendances et génération de la doc)
-
-      - name: "Set up Python"
-        uses: actions/setup-python@v2
+      - name: "Creating documentation"
+        uses: ammaraskar/sphinx-action@master
         with:
-          python-version: 3.9
-
-      - name: install build dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libusb-1.0-0-dev libudev-dev python3-brlapi
-
-      - name: "Install Python dependencies"
-        run: |
-          python -m pip install --upgrade pip setuptools wheel nox sphinxcontrib-images git+https://github.com/sphinx-contrib/youtube
-          pip install -r requirements.txt
-
-      - name: "Build Sphinx Doc"
-        run: |
-          nox --session gendoc
+           docs-folder: "./"
 
       # 3. Déploiement sur les Github Pages
 

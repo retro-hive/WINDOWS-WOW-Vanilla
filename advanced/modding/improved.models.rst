@@ -17,15 +17,15 @@ Installation
 
 Copy the file ``patch-3.MPQ`` into the ``Data`` directory of your WoW installation.
 
-.. _Improved Models: https://model-changing.net/gc/9-improved-models-for-112/
-.. _Google Drive: https://drive.google.com/open?id=1RQa_dZGtKQcXo_q5L7nCgcrHR9_aH1yQ
-
 Medias
 ------
 
-.. youtube:: 48PTIWemphk
+..
+   .. youtube:: 48PTIWemphk
 
 .. thumbnail:: ../../images/WoWScrnShot_072321_135456.png
 .. thumbnail:: ../../images/WoWScrnShot_072321_135749.png
 
 
+.. _Improved Models: https://model-changing.net/gc/9-improved-models-for-112/
+.. _Google Drive: https://drive.google.com/open?id=1RQa_dZGtKQcXo_q5L7nCgcrHR9_aH1yQ

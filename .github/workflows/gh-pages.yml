@@ -28,6 +28,7 @@ jobs:
         with:
            pre-build-command: "apt-get update -y && apt-get install -y git && pip install git+https://github.com/sphinx-contrib/youtube"
            docs-folder: "./"
+           build-command: "sphinx-build -b html -d _build/doctrees  --keep-going --no-color . _build/html"
 
       # 3. Déploiement sur les Github Pages
 

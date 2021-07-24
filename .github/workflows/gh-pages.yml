@@ -42,6 +42,7 @@ jobs:
           pip3 install wheel
           pip3 install nox
           pip3 install git+https://github.com/sphinx-contrib/youtube
+          pip3 install git+https://github.com/sphinx-contrib/images
 
       - name: "Build Sphinx Doc"
         run: |

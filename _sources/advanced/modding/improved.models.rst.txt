@@ -20,8 +20,7 @@ Copy the file ``patch-3.MPQ`` into the ``Data`` directory of your WoW installati
 Medias
 ------
 
-..
-   .. youtube:: 48PTIWemphk
+.. youtube:: 48PTIWemphk
 
 .. thumbnail:: ../../images/WoWScrnShot_072321_135456.png
 .. thumbnail:: ../../images/WoWScrnShot_072321_135749.png

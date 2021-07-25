@@ -35,8 +35,8 @@ Receiving damage
 
 This means that the less damage you receive, the less rage you gain.
 This is why going full protection might become a problem at some point :
-  * You will gain less rage from hits received.
-  * Your low offensive abilities will give you low rage points.
++ You will gain less rage from hits received.
++ Your low offensive abilities will give you low rage points.
 
 
 Generating threat
@@ -66,7 +66,7 @@ From skills
     - Rage cost
     - Threat
     - TPR
-  * - `Revenge`_
+  * - :ref:`skill-revenge`
     - 5
     - 355
     - 71
@@ -87,7 +87,6 @@ From skills
     - 70 * Players in group
     - up to 35
 
-.. _Revenge:     https://classic.wowhead.com/spell=25288/revenge
 .. _SunderArmor: https://classic.wowhead.com/spell=11597/sunder-armor
 .. _ShieldSlam:  https://classic.wowhead.com/spell=23925/shield-slam
 .. _ShieldBash:  https://classic.wowhead.com/spell=1672/shield-bash
@@ -100,4 +99,5 @@ From skills
   :caption: Role
   :name: role
 
+  warrior/skills
   warrior/tank

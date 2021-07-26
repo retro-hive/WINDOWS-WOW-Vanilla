@@ -50,12 +50,12 @@ Threat is done through damage and buff effects.
 A multiplier is applied depending on your stance:
 
   * Battle / Zerk : ``0.8``
-  * Defense : ``1.30`` (you can get up to ``1.45`` with ``defiance`` talent)
+  * Defense : ``1.30`` (you can get up to ``1.495`` with ``defiance`` talent)
 
 Taking a ``1 000`` hit damage, we generate
 
   * Battle / Zerk : ``800`` threat
-  * Defense : ``1 300`` threat (``1 450`` with ``defiance``)
+  * Defense : ``1 300`` threat (``1 495`` with ``defiance``)
 
 From skills
 ###########

@@ -39,6 +39,7 @@
         <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
         <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
         <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -191,20 +192,28 @@ attack and in Defensive Stance, making it essentially a tanking attack.</div>
 <ul class="simple">
 <li><p>Revenge cost 5 rage points. Just like <code class="docutils literal notranslate"><span class="pre">Overpower</span></code> (uses same cooldown).</p></li>
 <li><p>It is an instant cast.</p></li>
-<li><p>Revenge does not depend on your weapon. It scales with <code class="docutils literal notranslate"><span class="pre">attack</span> <span class="pre">power</span></code>.</p></li>
+<li><p>Revenge’s damage does not depend on your weapon.</p></li>
 <li><p>You can improve Revenge (from protection tree) to add a stun effect.</p></li>
-<li><p>There is a 5 seconds cooldown, nerfing its use when over-geared.
-This still is your best <code class="docutils literal notranslate"><span class="pre">TPR</span></code> skill.</p></li>
+<li><p>There is a 5 seconds cooldown.</p></li>
 </ul>
 </div>
 <div class="section" id="tips">
 <h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
+<ul>
 <li><p>Revenge is the ability with the highest <code class="docutils literal notranslate"><span class="pre">TPR</span></code>.
 While Revenge is not gear dependent, triggering it is.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Shield</span> <span class="pre">Block</span></code> is the best way to trigger Revenge.</p></li>
 <li><p>You don’t have to use Revenge on the mob that triggered it.
 You get 5 seconds to spend it on the target you want.</p></li>
+<li><div class="line-block">
+<div class="line">The threat from Revenge (Rank 6) is :</div>
+<div class="line"><span class="math notranslate nohighlight">\(270 + (d * 2.25)\)</span></div>
+<div class="line">If you except a 50 damage average, this means:</div>
+<div class="line"><span class="math notranslate nohighlight">\(270 + (50 * 2.25) = 270 + 112.5 = 382.5\)</span></div>
+<div class="line">Considering the skill cost 5 rage points, its <code class="docutils literal notranslate"><span class="pre">TPR</span></code> is <span class="math notranslate nohighlight">\(382.5 / 5 = 76.5\)</span></div>
+<div class="line">See <a class="reference external" href="https://web.archive.org/web/20210726163120if_/https://github.com/magey/classic-warrior/wiki/Threat-Mechanics#threat-values">Threat Values</a></div>
+</div>
+</li>
 </ul>
 </div>
 <div class="section" id="history">

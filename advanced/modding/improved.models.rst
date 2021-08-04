@@ -11,6 +11,7 @@ Download
 --------
 
 * Official `Google Drive`_
+* `Archive.org`_
 
 Installation
 ------------
@@ -28,3 +29,4 @@ Medias
 
 .. _Improved Models: https://model-changing.net/gc/9-improved-models-for-112/
 .. _Google Drive: https://drive.google.com/open?id=1RQa_dZGtKQcXo_q5L7nCgcrHR9_aH1yQ
+.. _Archive.org: https://archive.org/details/patch-3

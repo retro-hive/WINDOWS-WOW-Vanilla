@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Revenge &mdash; World of Warcraft - Vanilla  documentation</title>
+  <title>Slam &mdash; World of Warcraft - Vanilla  documentation</title>
   
 
   
@@ -46,8 +46,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Slam" href="slam.html" />
-    <link rel="prev" title="Warrior skills" href="../classes/warrior/skills.html" /> 
+    <link rel="next" title="Sunder Armor" href="sunder.armor.html" />
+    <link rel="prev" title="Revenge" href="revenge.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -99,8 +99,8 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../classes/warrior.html">Warrior</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../classes/warrior/skills.html">Warrior skills</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Revenge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="slam.html">Slam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="revenge.html">Revenge</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Slam</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sunder.armor.html">Sunder Armor</a></li>
 </ul>
 </li>
@@ -163,13 +163,13 @@
         
           <li><a href="../classes/warrior/skills.html">Warrior skills</a> &raquo;</li>
         
-      <li>Revenge</li>
+      <li>Slam</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/skills/revenge.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/skills/slam.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,48 +182,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="revenge">
-<span id="skill-revenge"></span><h1>Revenge<a class="headerlink" href="#revenge" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="slam">
+<span id="skill-slam"></span><h1>Slam<a class="headerlink" href="#slam" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line">Revenge is a high-threat Warrior counterattack.</div>
-<div class="line">It is only usable immediately after blocking, dodging, or parrying an
-attack and in Defensive Stance, making it essentially a tanking attack.</div>
+<div class="line">Slam is an ability that deals damage, based on your weapon plus an additional 87 damage.</div>
 </div>
 <div class="section" id="general-informations">
 <h2>General informations<a class="headerlink" href="#general-informations" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Revenge cost 5 rage points. Just like <code class="docutils literal notranslate"><span class="pre">Overpower</span></code> (uses same cooldown).</p></li>
-<li><p>It is an instant cast.</p></li>
-<li><p>Revenge’s damage does not depend on your weapon.</p></li>
-<li><p>You can improve Revenge (from protection tree) to add a stun effect.</p></li>
-<li><p>There is a 5 seconds cooldown.</p></li>
+<ul>
+<li><p>Slam cost 15 rage.</p></li>
+<li><div class="line-block">
+<div class="line">It has a 1.5 second cast time.</div>
+<div class="line">This means you can’t move while using it. Your target should not get too far.</div>
+</div>
+</li>
+<li><p>Its damage depends on the damage range of your weapon and <code class="docutils literal notranslate"><span class="pre">AP</span></code>.</p></li>
+<li><p>You can improve its cast time to 1 second (from fury tree).</p></li>
 </ul>
 </div>
 <div class="section" id="tips">
 <h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p>Revenge is the ability with the highest <code class="docutils literal notranslate"><span class="pre">TPR</span></code>.
-While Revenge is not gear dependent, triggering it is.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Shield</span> <span class="pre">Block</span></code> is the best way to trigger Revenge.</p></li>
-<li><p>You don’t have to use Revenge on the mob that triggered it.
-You get 5 seconds to spend it on the target you want.</p></li>
 <li><div class="line-block">
-<div class="line">The threat from Revenge (Rank 6) is :</div>
-<div class="line"><span class="math notranslate nohighlight">\(270 + (d * 2.25)\)</span></div>
-<div class="line">If you except a 50 damage average, this means:</div>
-<div class="line"><span class="math notranslate nohighlight">\(270 + (50 * 2.25) = 270 + 112.5 = 382.5\)</span></div>
-<div class="line">Considering the skill cost 5 rage points, its <code class="docutils literal notranslate"><span class="pre">TPR</span></code> is <span class="math notranslate nohighlight">\(382.5 / 5 = 76.5\)</span></div>
-<div class="line">See <a class="reference external" href="https://web.archive.org/web/20210726163120if_/https://github.com/magey/classic-warrior/wiki/Threat-Mechanics#threat-values">Threat Values</a></div>
+<div class="line">Only use slam when using 2 handed weapons, as it is mostly based on the weapon’s damage range.</div>
+<div class="line">Slam is not speed normalized. This means you want slow weapons with highest average damage (not DPS).</div>
 </div>
 </li>
-</ul>
+<li><p>Slam having a flat 1(.5) second speed, it will greatly increase your DPS with very slow weapons.</p></li>
+<li><div class="line-block">
+<div class="line">Slam is not a <code class="docutils literal notranslate"><span class="pre">next</span> <span class="pre">attack</span></code> skill.</div>
+<div class="line">Using it will pause your swing timer.</div>
 </div>
-<div class="section" id="history">
-<h2>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>1.6.0 (2005.07.12) : Tooltip updated to indicate the additional threat
-caused by this ability.
-There have been no changes to the amount of threat caused.</p></li>
+</li>
+<li><p>Slam is best used right after a white hit.</p></li>
+<li><p>Slam’s <code class="docutils literal notranslate"><span class="pre">DPR</span></code> is much higher than <code class="docutils literal notranslate"><span class="pre">Bloodthirst</span></code>, <code class="docutils literal notranslate"><span class="pre">Execute</span></code>, <code class="docutils literal notranslate"><span class="pre">Heroic</span> <span class="pre">Strike</span></code> or <code class="docutils literal notranslate"><span class="pre">Cleave</span></code>.</p></li>
+<li><p>Slam will do less damage than Bloodthirst when you get over 1500 <code class="docutils literal notranslate"><span class="pre">AP</span></code>.</p></li>
+<li><div class="line-block">
+<div class="line">Slam’s damage formula :</div>
+<div class="line"><span class="math notranslate nohighlight">\(Slam_{dmg}\ = Wep_{swing}\ +\ \left(AP\ \times\ \left(\frac{Wep_{speed}}{14}\right)\right) + 87\)</span></div>
+</div>
+</li>
 </ul>
 </div>
 </div>
@@ -234,8 +232,8 @@ There have been no changes to the amount of threat caused.</p></li>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="slam.html" class="btn btn-neutral float-right" title="Slam" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../classes/warrior/skills.html" class="btn btn-neutral float-left" title="Warrior skills" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sunder.armor.html" class="btn btn-neutral float-right" title="Sunder Armor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="revenge.html" class="btn btn-neutral float-left" title="Revenge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

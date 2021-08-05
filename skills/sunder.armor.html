@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Revenge &mdash; World of Warcraft - Vanilla  documentation</title>
+  <title>Sunder Armor &mdash; World of Warcraft - Vanilla  documentation</title>
   
 
   
@@ -46,8 +46,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Sunder Armor" href="sunder.armor.html" />
-    <link rel="prev" title="Warrior skills" href="../classes/warrior/skills.html" /> 
+    <link rel="next" title="Tanks" href="../classes/warrior/tank.html" />
+    <link rel="prev" title="Revenge" href="revenge.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -99,8 +99,8 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../classes/warrior.html">Warrior</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../classes/warrior/skills.html">Warrior skills</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Revenge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sunder.armor.html">Sunder Armor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="revenge.html">Revenge</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sunder Armor</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../classes/warrior/tank.html">Tanks</a></li>
@@ -162,13 +162,13 @@
         
           <li><a href="../classes/warrior/skills.html">Warrior skills</a> &raquo;</li>
         
-      <li>Revenge</li>
+      <li>Sunder Armor</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/skills/revenge.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/skills/sunder.armor.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -181,49 +181,89 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="revenge">
-<span id="skill-revenge"></span><h1>Revenge<a class="headerlink" href="#revenge" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="sunder-armor">
+<span id="skill-sunder-armor"></span><h1>Sunder Armor<a class="headerlink" href="#sunder-armor" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line">Revenge is a high-threat Warrior counterattack.</div>
-<div class="line">It is only usable immediately after blocking, dodging, or parrying an
-attack and in Defensive Stance, making it essentially a tanking attack.</div>
+<div class="line">Sunder Armor is an armor debuff.</div>
+<div class="line">It is often considered as a threat generation skill.
+In reality, it create very low threat, but will allow other skills to
+do much higher damage -&gt; threat.</div>
 </div>
 <div class="section" id="general-informations">
 <h2>General informations<a class="headerlink" href="#general-informations" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Revenge cost 5 rage points. Just like <code class="docutils literal notranslate"><span class="pre">Overpower</span></code> (uses same cooldown).</p></li>
+<li><p>Sunder armor cost 15 rage points.</p></li>
 <li><p>It is an instant cast.</p></li>
-<li><p>Revenge’s damage does not depend on your weapon.</p></li>
-<li><p>You can improve Revenge (from protection tree) to add a stun effect.</p></li>
-<li><p>There is a 5 seconds cooldown.</p></li>
+<li><p>Each stack reduces target’s armor by 450.</p></li>
+<li><p>You can stack it 5 times, giving 2250 armor reduction.</p></li>
+<li><p>You can improve Sunder Armor to cost 12 rage points (from protection tree).</p></li>
+<li><p>You can improve Amount of threat by 15% from T1’s 8/8 set (it will still be a bad threat tool).</p></li>
+<li><p>You can apply Sunder armor on a target that already has 5 stacks,
+but only the threat points will apply.</p></li>
 </ul>
 </div>
 <div class="section" id="tips">
 <h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p>Revenge is the ability with the highest <code class="docutils literal notranslate"><span class="pre">TPR</span></code>.
-While Revenge is not gear dependent, triggering it is.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Shield</span> <span class="pre">Block</span></code> is the best way to trigger Revenge.</p></li>
-<li><p>You don’t have to use Revenge on the mob that triggered it.
-You get 5 seconds to spend it on the target you want.</p></li>
+<li><p>Sunder Armor creates 260 threat for 15 rage points. This is a 17 <code class="docutils literal notranslate"><span class="pre">TPR</span></code>
+skill, which is really low.</p></li>
+<li><p>Sunder Armor is an essential skill to use to improve Raid’s damage.</p></li>
+<li><p>Sunder Armor as a <code class="docutils literal notranslate"><span class="pre">GCD</span></code> of 1.5s. It means 1 tank needs at least 7.5 seconds to apply 5 stacks,
+no matter its rage available.</p></li>
 <li><div class="line-block">
-<div class="line">The threat from Revenge (Rank 6) is :</div>
-<div class="line"><span class="math notranslate nohighlight">\(270 + (d * 2.25)\)</span></div>
-<div class="line">If you except a 50 damage average, this means:</div>
-<div class="line"><span class="math notranslate nohighlight">\(270 + (50 * 2.25) = 270 + 112.5 = 382.5\)</span></div>
-<div class="line">Considering the skill cost 5 rage points, its <code class="docutils literal notranslate"><span class="pre">TPR</span></code> is <span class="math notranslate nohighlight">\(382.5 / 5 = 76.5\)</span></div>
-<div class="line">See <a class="reference external" href="https://web.archive.org/web/20210726163120if_/https://github.com/magey/classic-warrior/wiki/Threat-Mechanics#threat-values">Threat Values</a></div>
+<div class="line">You should ask all your warriors (max 7) to make 1 Sunder Armor as opening skill.</div>
+<div class="line">This will allow your tank to save up to 75 rage points on real threat mecanisms,
+and help him to keep aggro on the fight.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Most bosses in WoW have 3731 armor.</div>
+<div class="line">5 stacks will lower their armor to <span class="math notranslate nohighlight">\(3731 - 2250 = 1481\)</span>.</div>
+<div class="line">Coupling with <code class="docutils literal notranslate"><span class="pre">Curse</span> <span class="pre">of</span> <span class="pre">Recklessness</span></code> (<code class="docutils literal notranslate"><span class="pre">CoR</span></code> 640 armor reduction) and
+<code class="docutils literal notranslate"><span class="pre">Faerie</span> <span class="pre">Fire</span></code> (<code class="docutils literal notranslate"><span class="pre">FF</span></code> 505 armor reduction) will lead to <span class="math notranslate nohighlight">\(3731 - (2250 + 640 + 505) = 336\)</span> armor left.</div>
 </div>
 </li>
 </ul>
 </div>
-<div class="section" id="history">
-<h2>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>1.6.0 (2005.07.12) : Tooltip updated to indicate the additional threat
-caused by this ability.
-There have been no changes to the amount of threat caused.</p></li>
-</ul>
+<div class="section" id="damage-reduction">
+<h2>Damage reduction<a class="headerlink" href="#damage-reduction" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Let’s see the damage reduction from armor points, with a unit having 3731 armor.</div>
+<div class="line">Armor reduction is calculated using this formula : <span class="math notranslate nohighlight">\(%reduction = armor / (armor + 5882.5)\)</span></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Debuffs</p></td>
+<td><p>Armor</p></td>
+<td><p>% reduction</p></td>
+</tr>
+<tr class="row-even"><td><p>None</p></td>
+<td><p>3731</p></td>
+<td><p>38.8%</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 SA</p></td>
+<td><p>1481</p></td>
+<td><p>20%</p></td>
+</tr>
+<tr class="row-even"><td><p>5 SA + CoR</p></td>
+<td><p>841</p></td>
+<td><p>12%</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 SA + CoR + FF</p></td>
+<td><p>336</p></td>
+<td><p>5%</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">It is essential to lower target’s armor as much as possible to get a real boost on the raid.</div>
+<div class="line">These debuffs are the very firsts to put on any target, to achieve really easier fights.</div>
+</div>
 </div>
 </div>
 
@@ -233,8 +273,8 @@ There have been no changes to the amount of threat caused.</p></li>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="sunder.armor.html" class="btn btn-neutral float-right" title="Sunder Armor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../classes/warrior/skills.html" class="btn btn-neutral float-left" title="Warrior skills" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../classes/warrior/tank.html" class="btn btn-neutral float-right" title="Tanks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="revenge.html" class="btn btn-neutral float-left" title="Revenge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

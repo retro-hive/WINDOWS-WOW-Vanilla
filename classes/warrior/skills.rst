@@ -8,3 +8,4 @@ Warrior skills
   :name: warrior-skills
 
   ../../skills/revenge
+  ../../skills/sunder.armor

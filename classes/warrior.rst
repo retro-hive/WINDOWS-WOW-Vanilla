@@ -68,9 +68,9 @@ From skills
     - TPR
   * - :ref:`skill-revenge`
     - 5
-    - 355
-    - 71
-  * - `SunderArmor`_
+    - :math:`270 + d * 2.25`
+    - :math:`54 + (d * 2.25) / 5`
+  * - :ref:`skill-sunder-armor`
     - 12-15
     - 260-299
     - 17-21

@@ -7,6 +7,8 @@ Warrior skills
   :caption: Warrior Skills
   :name: warrior-skills
 
+  ../../skills/bloodthirst
   ../../skills/revenge
   ../../skills/slam
   ../../skills/sunder.armor
+

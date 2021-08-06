@@ -11,4 +11,5 @@ Warrior skills
   ../../skills/revenge
   ../../skills/slam
   ../../skills/sunder.armor
+  ../../skills/whirlwind
 
